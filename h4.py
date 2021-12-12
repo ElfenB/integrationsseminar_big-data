@@ -13,15 +13,15 @@ y_name = "Mortality"
 
 plots = input("Plot graphs? (y/n)") == "y"
 
-data1 = pd.read_csv("deaths-and-accidents.csv")
+data1 = pd.read_csv("refined-data/deaths-and-accidents.csv")
 y = data1["deaths"]
 data2 = pd.DataFrame()
 
 values = pd.DataFrame()
 
-for file in listdir("fuel-and-temperature"):
+for file in listdir("refined-data/fuel-and-temperature"):
   city_name = file[:file.rfind(".csv")]
-  data2 = pd.read_csv("fuel-and-temperature/" + file)
+  data2 = pd.read_csv("refined-data/fuel-and-temperature/" + file)
   x = data2["temperature"]
 
   # Correlation with scipy

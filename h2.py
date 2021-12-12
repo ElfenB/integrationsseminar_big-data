@@ -17,9 +17,9 @@ data = pd.DataFrame()
 
 values = pd.DataFrame()
 
-for file in listdir("fuel-and-temperature"):
+for file in listdir("refined-data/fuel-and-temperature"):
   city_name = file[:file.rfind(".csv")]
-  data = pd.read_csv("fuel-and-temperature/" + file)
+  data = pd.read_csv("refined-data/fuel-and-temperature/" + file)
   x = data["e5"]
   y = data["temperature"]
 

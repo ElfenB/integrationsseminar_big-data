@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 from scipy import stats
 
-data = pd.read_csv("2020-12-06-prices.csv", sep=",")
+data = pd.read_csv("refined-data/2020-12-06-prices.csv")
 data = data[data["e5change"] == 1]
 data = data[data["e10change"] == 1]
 x = data["e5"]
