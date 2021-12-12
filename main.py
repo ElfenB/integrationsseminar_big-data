@@ -1,20 +1,15 @@
 import pandas as pd
 
-# from pandas.tools import plotting
 import numpy as np
 import matplotlib.pyplot as plt
 
 from scipy import stats
-from scipy.stats import linregress
 
 data = pd.read_csv("2020-12-06-prices.csv", sep=",")
 data = data[data["e5change"] == 1]
 data = data[data["e10change"] == 1]
 x = data["e5"]
 y = data["e10"]
-
-b, a, r, p, std = linregress(x, y)
-print('b: ' + str(b), '\na: ' + str(a), '\nr: ' + str(r), '\np: ' + str(p), '\nstd: ' + str(std))
 
 # Correlation with numpy
 print("Correlation with numpy")
