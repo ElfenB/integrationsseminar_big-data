@@ -11,4 +11,5 @@ Data preparation is mainly done with Excel and Python. There are 4 main data sou
 
 The focus is on the correlation and the r- and p-values, to prove hypotheses for correlation.
 
-h1, h2, h3 and h4 calculate the values needed for each hypotheses.
+test.py shows the in Milestone requested import and a first plot.
+h1.py, h2.py, h3.py and h4.py calculate the values needed for each hypotheses.
