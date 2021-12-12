@@ -19,7 +19,7 @@ print(np.corrcoef(x, y)[0][1])
 print("Correlation with scipy")
 print(stats.pearsonr(x, y))
 
-
+# Creating the scatter plot
 plt.scatter(x, y)
 plt.title("Correlation between e5 and e10 prices")
 plt.xlabel("e5")
