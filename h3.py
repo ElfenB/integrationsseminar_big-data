@@ -39,5 +39,5 @@ for file in listdir("refined-data/fuel-and-temperature"):
     plt.plot(np.unique(x), np.poly1d(np.polyfit(x, y, 1))(np.unique(x)), color="red")
     plt.show()
 
-values = values.append(pd.DataFrame({"City": "---AVERAGE---", "r-value": [values["r-value"].mean()], "p-value": [values["p-value"].mean()]}))
+# values = values.append(pd.DataFrame({"City": "---AVERAGE---", "r-value": [values["r-value"].mean()], "p-value": [values["p-value"].mean()]}))
 print(values.to_string(index = False))
