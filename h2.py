@@ -8,8 +8,8 @@ from scipy import stats
 # For file name reading
 from os import listdir
 
-x_name = "Temperature"
-y_name = "Fuel price"
+x_name = "Fuel price"
+y_name = "Temperature"
 
 plots = input("Plot graphs? (y/N)") == "y"
 
