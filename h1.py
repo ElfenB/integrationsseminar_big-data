@@ -34,8 +34,8 @@ for file in listdir("refined-data/fuel-and-temperature"):
   if plots:
     plt.scatter(x, y)
     plt.title("Correlation between " + x_name + " and " + y_name + " for " + city_name)
-    plt.xlabel("e5")
-    plt.ylabel("e10")
+    plt.xlabel(x_name)
+    plt.ylabel(y_name)
     plt.plot(np.unique(x), np.poly1d(np.polyfit(x, y, 1))(np.unique(x)), color="red")
     plt.show()
 
