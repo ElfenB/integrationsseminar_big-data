@@ -11,7 +11,7 @@ from os import listdir
 x_name = "Temperature"
 y_name = "Fuel price"
 
-plots = input("Plot graphs? (y/n)") == "y"
+plots = input("Plot graphs? (y/N)") == "y"
 
 data = pd.DataFrame()
 

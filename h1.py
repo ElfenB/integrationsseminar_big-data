@@ -11,7 +11,7 @@ from os import listdir
 x_name = "Traffic accidents"
 y_name = "Fuel price"
 
-plots = input("Plot graphs? (y/n)") == "y"
+plots = input("Plot graphs? (y/N)") == "y"
 
 data1 = pd.read_csv("refined-data/deaths-and-accidents.csv")
 x = data1["accidents"]
