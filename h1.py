@@ -11,7 +11,7 @@ from os import listdir
 x_name = "Traffic accidents"
 y_name = "Fuel price"
 
-plots = input("Plot graphs? (y/n)") == "y"
+plots = input("Plot graphs? (y/N)") == "y"
 
 data1 = pd.read_csv("refined-data/deaths-and-accidents.csv")
 x = data1["accidents"]
@@ -34,10 +34,10 @@ for file in listdir("refined-data/fuel-and-temperature"):
   if plots:
     plt.scatter(x, y)
     plt.title("Correlation between " + x_name + " and " + y_name + " for " + city_name)
-    plt.xlabel("e5")
-    plt.ylabel("e10")
+    plt.xlabel(x_name)
+    plt.ylabel(y_name)
     plt.plot(np.unique(x), np.poly1d(np.polyfit(x, y, 1))(np.unique(x)), color="red")
     plt.show()
 
-values = values.append(pd.DataFrame({"City": "---AVERAGE---", "r-value": [values["r-value"].mean()], "p-value": [values["p-value"].mean()]}))
+# values = values.append(pd.DataFrame({"City": "---AVERAGE---", "r-value": [values["r-value"].mean()], "p-value": [values["p-value"].mean()]}))
 print(values.to_string(index = False))
